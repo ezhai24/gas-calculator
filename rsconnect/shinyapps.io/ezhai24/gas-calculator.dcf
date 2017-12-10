@@ -1,0 +1,13 @@
+name: gas-calculator
+title: gas-calculator
+username:
+account: ezhai24
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 246747
+bundleId: 1125825
+url: https://ezhai24.shinyapps.io/gas-calculator/
+when: 1512890993.36611
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: README.md
