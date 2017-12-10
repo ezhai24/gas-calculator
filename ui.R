@@ -23,9 +23,9 @@ shinyUI(
         numericInput("dist", "", 1000.1, step = 0.1)
       ),
       
-      column(4, numericInput("avg.price", "Average Gas Price", 2.93, step = 0.01)),
+      column(4, numericInput("mpg", "Car Mileage", 22)),
       
-      column(4, numericInput("mpg", "Car Mileage", 22))
+      column(4, numericInput("avg.price", "Average Gas Price", 2.93, step = 0.01))
     )
   )
 )
