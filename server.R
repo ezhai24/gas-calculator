@@ -22,12 +22,13 @@ shinyServer(function(input, output, session) {
   
   output$payment <- renderText({
     validate(
-      need(is.numeric(input$dist), 'Please enter a valid numeric value for distance input'),
-      need(is.numeric(input$mpg), 'Please enter a valid numeric value for mileage input'),
-      need(is.numeric(input$avg.price), 'Please enter a valid numeric value for gas price input')
+      need(is.numeric(input$dist), 'Please enter a valid numeric value for distance input.'),
+      need(is.numeric(input$mpg), 'Please enter a valid numeric value for mileage input.'),
+      need(is.numeric(input$avg.price), 'Please enter a valid numeric value for gas price input.')
     )
     gallons.used <- (input$dist * 2) / input$mpg
     payment <- gallons.used * input$avg.price
-    payment
+    paste0("$", format(round(payment, 2), nsmall = 2) 
+)
   })
 })
