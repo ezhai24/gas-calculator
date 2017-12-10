@@ -18,7 +18,7 @@ shinyUI(
           "destination",
           "Distance to...",
           c("Western", "UO", "OSU", "Central", "Eastern",
-            "Gonzaga", "WSU", "Idaho", "Montana")
+            "Gonzaga", "WSU", "Boise State", "Missoula")
         ),
         numericInput("dist", "", 1000.1, step = 0.1)
       ),
